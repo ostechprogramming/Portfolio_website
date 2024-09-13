@@ -40,8 +40,9 @@
     }
 
     .about-img {
-      height: 160px;
-      width: 100%;
+      height: 200px;
+      width: 100px;
+      border-radius: 50%;
     }
 
     .skills {
@@ -49,7 +50,11 @@
       margin: 5px;
       box-shadow: 1px 1px 2px #d9d9d9;
     }
-
+    #contact{
+      background-image: url("images/con-3.jpg");
+      background-size: cover ;
+      background-position: center;
+    }
     @media (max-width:1400px) {
       .skills:nth-child(3) {
         width: 120%;
@@ -73,7 +78,7 @@
               <a class="nav-link" href="#skills">SKILLS</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              <a class="nav-link" href="#hero">PORTFOLIO</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#teams">TEAMS</a>
@@ -89,7 +94,7 @@
   <!-- header nav ends -->
 
   <!-- hero page begins -->
-  <section class="hero d-flex flex-column text-center justify-content-center">
+  <section class="hero d-flex flex-column text-center justify-content-center" id="hero">
     <div class="text-center">
       <h1 class="h1 text-white fw-medium fst-italic">Ostech Innovation</h1>
       <h2 class="display-3 text-white fw-bold fs-2">I am <span class="typing fst-italic"></span></h2>
@@ -227,7 +232,7 @@
     </div>
     <div class="row justify-content-md-end mt-5 pt-5">
       <div class="col-3 col-md-2 img text-center">
-        <img class="about-img rounded-circle border border-5 border-dark-subtle img-fluid" src="images/student.jpg"
+        <img class="about-img  border border-5 border-dark-subtle img-fluid" src="images/student.jpg"
           alt="img">
       </div>
       <div class="col-9 col-md-5">
@@ -246,13 +251,13 @@
       </div>
       <div class="col-3 col-md-2 img text-center">
         <img class="about-img rounded-circle border border-5 border-dark-subtle img-fluid"
-          src="images/continous-learning.jpg" alt="img">
+          src="images/learn.jpg" alt="img">
       </div>
     </div>
     <div class="row justify-content-md-end mt-5 pt-5">
       <div class="col-3 col-md-2 img text-center">
-        <img class="about-img rounded-circle border border-5 border-dark-subtle img-fluid"
-          src="images/pexels-jill-wellington-1638660-39853.jpg" alt="img">
+        <img class="about-img  border border-5 border-dark-subtle img-fluid"
+          src="images/vr.jpg" alt="img">
       </div>
       <div class="col-9 col-md-5">
         <h5>Future</h5>
@@ -262,10 +267,9 @@
     </div>
     <div class="row justify-content-md-center mt-5 pt-5">
       <div class="col-lg-3 col-md-2 d-flex justify-content-center hire-text ">
-        <a href="#contact">
-          <h2
-            class="rounded-2 h4 d-flex justify-content-center align-items-center bg-primary text-white border-dark-subtle p-4">
-            your next hire</h2>
+        <a href="#contact" class="btn btn-primary">
+          <h4 class="">
+            Your next hire</h4>
         </a>
       </div>
     </div>
@@ -275,25 +279,25 @@
 
   <!--Contect Section-->
   <section class="py-5" id="contact">
-    <div class="container-xxl py-5">
+    <div class="container-fluid py-5">
       <div class="col-12 d-flex flex-column text-center justify-content-center">
         <h2 class="text-white">CONTACT ME</h2>
-        <h5 class="text-white fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in this
+        <h5 class="text-white fw-normal py-2 fst-italic" style="color: #ddd;">Interested if I'd be the right fit for your team? Fill in this
           form and I will respond within 24-48 hours.</h5>
       </div>
     </div>
-    <div class="row pt-4 mt-5">
-      <div class="col-12">
+    <div class="row pt-3 p-2 mt-5">
+      <div class="col-lg-12 ">
         <form action="#" method="post">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6">
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name" required>
+                <input type="text" class="form-control border-dark-subtle" id="floatingInput" placeholder="Enter Name" required>
                 <label for="floatingInput">Enter Name*</label>
               </div>
 
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingEmail" placeholder="Enter Email" required>
+                <input type="text" class="form-control border-dark-subtle" id="floatingEmail" placeholder="Enter Email" required>
                 <label for="floatingEmail">Enter Email*</label>
               </div>
 
@@ -304,12 +308,12 @@
             </div>
 
             <div class="form-floating col-lg-6">
-              <textarea class="form-control" placeholder="leave a comment here" id="floatingMessage"
+              <textarea class="form-control border-dark-subtle" placeholder="leave a comment here" id="floatingMessage"
                 style="height:205px;" required></textarea>
               <label for="floatingMessage" class="px-4">Enter Message</label>
             </div>
-            <div class="col-12 mt-5 d-flex justify-content-center">
-              <button class="btn btn-lg btn-outline-light"> SEND MESSAGE</button>
+            <div class="col-lg-6 mt-5 d-flex justify-content-center border-dark-subtle">
+              <button class="btn btn-lg btn-outline-dark"> SEND MESSAGE</button>
             </div>
           </div>
         </form>
@@ -319,8 +323,8 @@
 
   <!--Footer-->
   <footer>
-    <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-between">
-      <p>Copyright <i class="fa fa copyright"></i> 2024 James Anderson </p>
+    <div class="container-xxl bg-dark flex-wrap pt-3 d-flex align-items-center justify-content-between text-white">
+      <p>Copyright <i class="fa fa copyright"></i> 2024 Oyelade Osaze </p>
       <ul class="social-icons d-flex">
         <a href="https://www.twitter.com"
           class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i
